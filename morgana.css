@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.photo img {
+    width: 10%;
+    height: auto;
+    border: 2px solid #fff; /* Colore del bordo della foto */
+    margin-left:15%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #e74c3c; /* Colore del cuore */
+    opacity: 0;
+    transition: opacity 0.3s;
+}

@@ -2,21 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+   
+    
     height: 100vh;
-    background-color: #f8f8f8;
+   
 }
 
-.photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+
 
 .photo {
-    position: relative;
+    
     cursor: pointer;
     overflow: hidden;
     border-radius: 8px;
@@ -24,23 +20,26 @@ body {
 }
 
 .photo img {
-    width: 10%;
+    width: 30%;
     height: auto;
     border: 2px solid #fff; /* Colore del bordo della foto */
-    margin-left:15%;
+    margin-top:5%;
+    margin-left:8%;
+   
 }
 
 .caption {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 10%;
+    width: 70;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 8px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
+    display: inline-block;
 }
 
 .photo:hover {
@@ -55,4 +54,26 @@ body {
     color: #e74c3c; /* Colore del cuore */
     opacity: 0;
     transition: opacity 0.3s;
+}
+H1
+{
+    text-align: center;
+
+  
+
+
+
+}
+
+.titolo{
+    
+border:groove 3px red;
+    
+   text-align:center;
+    width:70%;
+    height: 10%;
+    margin-top:5%;
+   margin-left:auto;
+    margin-right:auto;
+      
 }

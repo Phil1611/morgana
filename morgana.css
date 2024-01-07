@@ -4,7 +4,7 @@ body {
     padding: 0;
    
    
-    
+   
     height: 100vh;
    
 }
@@ -17,14 +17,18 @@ body {
     overflow: hidden;
     border-radius: 8px;
     transition: transform 0.3s;
+    width:30%
+    heigth:auto;
+    max-width: 100%;
 }
 
 .photo img {
     width: 30%;
     height: auto;
-    border: 2px solid #fff; /* Colore del bordo della foto */
+    border: 2px solid #fff; 
     margin-top:5%;
     margin-left:8%;
+    max-width: 100%;
    
 }
 
@@ -32,7 +36,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 10%;
-    width: 70;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 8px;
@@ -43,7 +47,7 @@ body {
 }
 
 .photo:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
 }
 
 .heart {
@@ -71,9 +75,18 @@ border:groove 3px red;
     
    text-align:center;
     width:70%;
-    height: 10%;
+    height: 20%;
     margin-top:5%;
    margin-left:auto;
     margin-right:auto;
       
+}
+.gallery
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}  
+    
+    
 }
